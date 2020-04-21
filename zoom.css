@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+.zoom-image {
+    max-width: 1000px; /* 幅を指定 */
+	z-index:1;
+}
+.zoom-link {
+    display: block;
+    overflow: hidden;
+    padding: 70% 0 0; /* 縦横比を指定 */
+    position: relative;
+}
+.zoom-photo {
+    left: 0;
+    top: 0;
+    display: block;
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all .7s ease-in-out;
+    width: 100%;
+    z-index: 1;
+}
+.zoom-link:hover .zoom-photo {
+    transform: scale3d(1.1,1.1,1); /* hover時の倍率を指定 */
+}
